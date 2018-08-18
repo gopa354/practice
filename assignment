@@ -1,1 +1,6 @@
-# practice
+
+x=input("enter input")
+if type(x)==int:
+    print("it is Integer")
+elif type(x)==str:
+    print("it is string")

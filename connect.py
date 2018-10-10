@@ -60,7 +60,7 @@ df4.select("customer_first_name").filter("purchases == 3").show()
 
 df5=spark.sql("select distinct count(product_id) as product,count(customer_id) as customer from sales group by DATE(timestamp)")
 #df5.show(25)
-print("The total no of users are ",df5.count())
+print("total number of users who purchased the same product consecutively at least 2 times on a given day is: ",df5.count())
 
 
 
